@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88651B0A-AD67-4241-B02C-4039993BDD5B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ventas</RootNamespace>
+    <AssemblyName>ventas</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agregar_Producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agregar_Producto.Designer.cs">
+      <DependentUpon>Agregar_Producto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrudProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrudProductos.Designer.cs">
+      <DependentUpon>CrudProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filtros\Porticket.cs" />
+    <Compile Include="filtros\Porusuario.cs" />
+    <Compile Include="Usuarios\crudusuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\crudusuario.Designer.cs">
+      <DependentUpon>crudusuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filtros\ifiltro.cs" />
+    <Compile Include="filtros\PorEntrada.cs" />
+    <Compile Include="filtros\Porinventario.cs" />
+    <Compile Include="filtros\PorSalida.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENU.designer.cs">
+      <DependentUpon>MENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productos\listaproductos.cs" />
+    <Compile Include="productos\producto.cs" />
+    <Compile Include="Receta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receta.Designer.cs">
+      <DependentUpon>Receta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes.Designer.cs">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios\tipodeusuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios\tipodeusuario.Designer.cs">
+      <DependentUpon>tipodeusuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vender.Designer.cs">
+      <DependentUpon>Vender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VENTAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENTAS.Designer.cs">
+      <DependentUpon>VENTAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sql.cs" />
+    <EmbeddedResource Include="Agregar_Producto.resx">
+      <DependentUpon>Agregar_Producto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrudProductos.resx">
+      <DependentUpon>CrudProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\crudusuario.resx">
+      <DependentUpon>crudusuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENU.resx">
+      <DependentUpon>MENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receta.resx">
+      <DependentUpon>Receta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes.resx">
+      <DependentUpon>Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios\tipodeusuario.resx">
+      <DependentUpon>tipodeusuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vender.resx">
+      <DependentUpon>Vender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS.resx">
+      <DependentUpon>VENTAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\harina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salsa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people_114360.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\community_users_12977.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_package_box_products_2343.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_inventory_maintenance_product_box_boxes_2326.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashier_icon-icons.com_53629.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1455739708_Kitchen_Bold_Line_Color_Mix-04_icon-icons.com_53405.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice_106601.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house-outline %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-button %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recetab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spa-bowl-to-mix-treatments-ingredients %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spa-bowl-to-mix-treatments-ingredients.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\storage %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\storage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recibo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recibo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\completar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\completar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\generar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\generar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paga2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pagar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
