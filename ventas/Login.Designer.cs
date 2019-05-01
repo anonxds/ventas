@@ -48,10 +48,9 @@
             this.txtusuario.LineIdleColor = System.Drawing.Color.Gray;
             this.txtusuario.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtusuario.LineThickness = 3;
-            this.txtusuario.Location = new System.Drawing.Point(153, 170);
-            this.txtusuario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtusuario.Location = new System.Drawing.Point(102, 109);
             this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(206, 54);
+            this.txtusuario.Size = new System.Drawing.Size(137, 36);
             this.txtusuario.TabIndex = 0;
             this.txtusuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtusuario.OnValueChanged += new System.EventHandler(this.txtusuario_OnValueChanged);
@@ -68,28 +67,29 @@
             this.txtcontrasena.LineIdleColor = System.Drawing.Color.Gray;
             this.txtcontrasena.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtcontrasena.LineThickness = 3;
-            this.txtcontrasena.Location = new System.Drawing.Point(153, 232);
-            this.txtcontrasena.Margin = new System.Windows.Forms.Padding(4);
+            this.txtcontrasena.Location = new System.Drawing.Point(102, 151);
             this.txtcontrasena.Name = "txtcontrasena";
-            this.txtcontrasena.Size = new System.Drawing.Size(206, 54);
+            this.txtcontrasena.Size = new System.Drawing.Size(137, 35);
             this.txtcontrasena.TabIndex = 1;
             this.txtcontrasena.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(72, 204);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(48, 133);
+            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(64, 20);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(43, 13);
             this.bunifuCustomLabel1.TabIndex = 2;
             this.bunifuCustomLabel1.Text = "Usuario";
             // 
             // bunifuCustomLabel2
             // 
             this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(44, 266);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(29, 173);
+            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(92, 20);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(61, 13);
             this.bunifuCustomLabel2.TabIndex = 3;
             this.bunifuCustomLabel2.Text = "Contrasena";
             // 
@@ -98,9 +98,10 @@
             this.btningresar.BackColor = System.Drawing.Color.Transparent;
             this.btningresar.Image = global::ventas.Properties.Resources.login;
             this.btningresar.ImageActive = global::ventas.Properties.Resources.login__1_;
-            this.btningresar.Location = new System.Drawing.Point(208, 307);
+            this.btningresar.Location = new System.Drawing.Point(139, 200);
+            this.btningresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btningresar.Name = "btningresar";
-            this.btningresar.Size = new System.Drawing.Size(71, 71);
+            this.btningresar.Size = new System.Drawing.Size(47, 46);
             this.btningresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btningresar.TabIndex = 4;
             this.btningresar.TabStop = false;
@@ -109,16 +110,18 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 401);
+            this.ClientSize = new System.Drawing.Size(291, 261);
             this.Controls.Add(this.btningresar);
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.txtcontrasena);
             this.Controls.Add(this.txtusuario);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "Login";
+            this.Padding = new System.Windows.Forms.Padding(13, 39, 13, 13);
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.White;
             this.Text = "Login";

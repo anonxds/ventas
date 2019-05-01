@@ -18,7 +18,7 @@ namespace ventas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Reportes("alex"));
+            Application.Run(new Login());
         }
     }
 }

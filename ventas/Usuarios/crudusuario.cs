@@ -1,4 +1,5 @@
-﻿using MetroFramework.Forms;
+﻿using MetroFramework;
+using MetroFramework.Forms;
 using Proyecto1;
 using System;
 using System.Collections.Generic;
@@ -96,7 +97,7 @@ namespace ventas
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
-            tipodeusuario t = new tipodeusuario();
+            tipodeusuario t = new tipodeusuario(lblnombre.Text);
             t.Show();
         }
 
@@ -104,6 +105,12 @@ namespace ventas
         {
             MENU m = new MENU(lblnombre.Text);
             m.Show();
+        }
+
+        private void btnayuda_Click(object sender, EventArgs e)
+        {
+            MetroMessageBox.Show(this, "Para Editar un usuario da doble click a la tabla en la columna deseada","Ayuda");
+
         }
     }
 }

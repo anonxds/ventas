@@ -36,7 +36,7 @@ namespace Proyecto1
 
         private void btnrecetas_Click(object sender, EventArgs e)
         {
-            Receta r = new Receta();
+            Receta r = new Receta(lblnombre.Text);
             r.Show();
         }
 
@@ -54,7 +54,7 @@ namespace Proyecto1
 
         private void btntipousuario_Click(object sender, EventArgs e)
         {
-            tipodeusuario u = new tipodeusuario();
+            tipodeusuario u = new tipodeusuario(lblnombre.Text);
             u.Show();
         }
 

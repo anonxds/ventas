@@ -26,13 +26,28 @@ namespace ventas
         List<string> _listado = new List<string>();
         public Vender(string nombre)
         {
-            InitializeComponent();            
+            InitializeComponent();
+
+ 
             autocompletar();
             s.populate(cbproducto, "select * from productos where Existencia = 1", "Nombre");
             s.moneda(lblusd);
             Moneda();
             lblnombre.Text = nombre.ToString();
-           
+            type();
+
+
+        }
+        public void type()
+        {
+            string query = string.Format("select v.id,v.Nombre,c.Tipo from Usuario as v inner join Tipousuario as c on v.Tipousuario = c.id where v.Nombre = '{0}'",lblnombre.Text);
+           // lblprecio.Text = s.getdata(query, "c.Tipo");
+            if (s.getdata(query, "Tipo") == "Usuario")
+            {
+                btnsalir.Visible = false;
+                label12.Visible = false;
+            }
+           //"Usuarios"
         }
 
         private void btnagregar_Click(object sender, EventArgs e)
@@ -168,15 +183,15 @@ namespace ventas
                     string ins = string.Format("insert into Salida values ('{0}','{1}','{2}')", _nombre[i].ToString(), DateTime.Now.ToString("yyyy-MM-dd HH:mm"), lblnombre.Text);
                     s.Exe(ins);
                 }
-                string ver = string.Format("update productos set Existencia = 0 where Cantidad = 0");
-                s.Exe(ver);
+           
                 string query = string.Format("update productos set Cantidad = (Cantidad - qty), qty = 0");
                 s.Exe(query);
                 string nombre = string.Format("select * from Usuario where Nombre = '{0}'", lblnombre.Text);
                 string ticket = string.Format("insert into ticket values ('{0}','{1}','{2}','{3}')", string.Join(",", _nombre), lblprecio.Text, s.getdata(nombre, "id").ToString(), DateTime.Now.ToString("yyyy-MM-dd HH:mm"));
                 s.Exe(ticket);
                  ExportDataTableToPdf("ticket");
-
+                string ver = string.Format("update productos set Existencia = 0 where Cantidad = 0");
+                s.Exe(ver);
             }
             else
             {

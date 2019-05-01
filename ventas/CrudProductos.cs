@@ -1,4 +1,5 @@
-﻿using MetroFramework.Forms;
+﻿using MetroFramework;
+using MetroFramework.Forms;
 using Proyecto1;
 using System;
 using System.Collections.Generic;
@@ -63,6 +64,11 @@ namespace ventas
         private void CrudProductos_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnayuda_Click(object sender, EventArgs e)
+        {
+            MetroMessageBox.Show(this,"Para Editar un producto da doble click a la tabla en la columna deseada","Ayuda");
         }
     }
 }

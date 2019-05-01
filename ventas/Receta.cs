@@ -14,10 +14,11 @@ namespace ventas
     public partial class Receta : MetroForm
     {
         sql db = new sql();
-        public Receta()
+        public Receta(string nombre)
         {
             InitializeComponent();
             productos();
+            lblnombre.Text = nombre.ToString();
         }
         List<int> _cantidad = new List<int>();
         List<string> _nombre = new List<string>();
@@ -25,7 +26,7 @@ namespace ventas
         List<double> _precio = new List<double>();
         public void productos()
         {
-            db.populate(cbingredientes,"select * from productos","nombre");
+            db.populate(cbingredientes,"select * from productos where Existencia = 1","nombre");
         }
       
 

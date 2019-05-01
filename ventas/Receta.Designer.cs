@@ -52,6 +52,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btneliminar = new Bunifu.Framework.UI.BunifuImageButton();
+            this.lblnombre = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnagregarI)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnconfirma)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
@@ -69,10 +70,10 @@
             this.txtnombre.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtnombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtnombre.isPassword = false;
-            this.txtnombre.Location = new System.Drawing.Point(118, 21);
+            this.txtnombre.Location = new System.Drawing.Point(79, 14);
             this.txtnombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(221, 44);
+            this.txtnombre.Size = new System.Drawing.Size(147, 29);
             this.txtnombre.TabIndex = 0;
             this.txtnombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -80,9 +81,10 @@
             // 
             this.cbingredientes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbingredientes.FormattingEnabled = true;
-            this.cbingredientes.Location = new System.Drawing.Point(118, 91);
+            this.cbingredientes.Location = new System.Drawing.Point(79, 59);
+            this.cbingredientes.Margin = new System.Windows.Forms.Padding(2);
             this.cbingredientes.Name = "cbingredientes";
-            this.cbingredientes.Size = new System.Drawing.Size(121, 28);
+            this.cbingredientes.Size = new System.Drawing.Size(82, 21);
             this.cbingredientes.TabIndex = 1;
             this.cbingredientes.SelectedIndexChanged += new System.EventHandler(this.cbingredientes_SelectedIndexChanged);
             // 
@@ -91,9 +93,10 @@
             this.btnagregarI.BackColor = System.Drawing.Color.Transparent;
             this.btnagregarI.Image = global::ventas.Properties.Resources.spa_bowl_to_mix_treatments_ingredients;
             this.btnagregarI.ImageActive = global::ventas.Properties.Resources.spa_bowl_to_mix_treatments_ingredients__1_;
-            this.btnagregarI.Location = new System.Drawing.Point(402, 167);
+            this.btnagregarI.Location = new System.Drawing.Point(268, 109);
+            this.btnagregarI.Margin = new System.Windows.Forms.Padding(2);
             this.btnagregarI.Name = "btnagregarI";
-            this.btnagregarI.Size = new System.Drawing.Size(71, 71);
+            this.btnagregarI.Size = new System.Drawing.Size(47, 46);
             this.btnagregarI.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnagregarI.TabIndex = 2;
             this.btnagregarI.TabStop = false;
@@ -105,9 +108,10 @@
             this.btnconfirma.BackColor = System.Drawing.Color.Transparent;
             this.btnconfirma.Image = global::ventas.Properties.Resources.completar2;
             this.btnconfirma.ImageActive = global::ventas.Properties.Resources.completar;
-            this.btnconfirma.Location = new System.Drawing.Point(728, 486);
+            this.btnconfirma.Location = new System.Drawing.Point(485, 316);
+            this.btnconfirma.Margin = new System.Windows.Forms.Padding(2);
             this.btnconfirma.Name = "btnconfirma";
-            this.btnconfirma.Size = new System.Drawing.Size(71, 71);
+            this.btnconfirma.Size = new System.Drawing.Size(47, 46);
             this.btnconfirma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnconfirma.TabIndex = 3;
             this.btnconfirma.TabStop = false;
@@ -117,10 +121,10 @@
             // listado
             // 
             this.listado.FormattingEnabled = true;
-            this.listado.ItemHeight = 20;
-            this.listado.Location = new System.Drawing.Point(531, 110);
+            this.listado.Location = new System.Drawing.Point(354, 71);
+            this.listado.Margin = new System.Windows.Forms.Padding(2);
             this.listado.Name = "listado";
-            this.listado.Size = new System.Drawing.Size(268, 264);
+            this.listado.Size = new System.Drawing.Size(180, 173);
             this.listado.TabIndex = 4;
             this.listado.DoubleClick += new System.EventHandler(this.listado_DoubleClick);
             // 
@@ -137,10 +141,10 @@
             this.txtcantidad.LineIdleColor = System.Drawing.Color.Gray;
             this.txtcantidad.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtcantidad.LineThickness = 3;
-            this.txtcantidad.Location = new System.Drawing.Point(118, 134);
+            this.txtcantidad.Location = new System.Drawing.Point(79, 87);
             this.txtcantidad.Margin = new System.Windows.Forms.Padding(4);
             this.txtcantidad.Name = "txtcantidad";
-            this.txtcantidad.Size = new System.Drawing.Size(140, 44);
+            this.txtcantidad.Size = new System.Drawing.Size(93, 29);
             this.txtcantidad.TabIndex = 5;
             this.txtcantidad.Text = "0";
             this.txtcantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -150,9 +154,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(46, 45);
+            this.label1.Location = new System.Drawing.Point(31, 29);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 20);
+            this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Nombre";
             // 
@@ -160,9 +165,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(13, 99);
+            this.label2.Location = new System.Drawing.Point(9, 64);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 20);
+            this.label2.Size = new System.Drawing.Size(65, 13);
             this.label2.TabIndex = 7;
             this.label2.Text = "Ingredientes";
             // 
@@ -170,9 +176,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(38, 158);
+            this.label3.Location = new System.Drawing.Point(25, 103);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 20);
+            this.label3.Size = new System.Drawing.Size(49, 13);
             this.label3.TabIndex = 8;
             this.label3.Text = "Cantidad";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -189,10 +196,10 @@
             this.txtprecio.LineIdleColor = System.Drawing.Color.Gray;
             this.txtprecio.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtprecio.LineThickness = 3;
-            this.txtprecio.Location = new System.Drawing.Point(531, 513);
+            this.txtprecio.Location = new System.Drawing.Point(354, 333);
             this.txtprecio.Margin = new System.Windows.Forms.Padding(4);
             this.txtprecio.Name = "txtprecio";
-            this.txtprecio.Size = new System.Drawing.Size(140, 44);
+            this.txtprecio.Size = new System.Drawing.Size(93, 29);
             this.txtprecio.TabIndex = 9;
             this.txtprecio.Text = "0";
             this.txtprecio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -200,18 +207,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(471, 537);
+            this.label4.Location = new System.Drawing.Point(314, 349);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 20);
+            this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 10;
             this.label4.Text = "Precio";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 465);
+            this.label5.Location = new System.Drawing.Point(19, 302);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 20);
+            this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 12;
             this.label5.Text = "Porcion";
             // 
@@ -227,10 +236,10 @@
             this.txtporcion.LineIdleColor = System.Drawing.Color.Gray;
             this.txtporcion.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtporcion.LineThickness = 3;
-            this.txtporcion.Location = new System.Drawing.Point(108, 441);
+            this.txtporcion.Location = new System.Drawing.Point(72, 286);
             this.txtporcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtporcion.Name = "txtporcion";
-            this.txtporcion.Size = new System.Drawing.Size(140, 44);
+            this.txtporcion.Size = new System.Drawing.Size(93, 30);
             this.txtporcion.TabIndex = 11;
             this.txtporcion.Text = "0";
             this.txtporcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -238,18 +247,20 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(527, 388);
+            this.label6.Location = new System.Drawing.Point(351, 252);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(121, 20);
+            this.label6.Size = new System.Drawing.Size(82, 13);
             this.label6.TabIndex = 13;
             this.label6.Text = "Precio Sugerido";
             // 
             // lblprecio
             // 
             this.lblprecio.AutoSize = true;
-            this.lblprecio.Location = new System.Drawing.Point(651, 388);
+            this.lblprecio.Location = new System.Drawing.Point(434, 252);
+            this.lblprecio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblprecio.Name = "lblprecio";
-            this.lblprecio.Size = new System.Drawing.Size(18, 20);
+            this.lblprecio.Size = new System.Drawing.Size(13, 13);
             this.lblprecio.TabIndex = 14;
             this.lblprecio.Text = "0";
             // 
@@ -257,18 +268,20 @@
             // 
             this.lblprecioP.AutoSize = true;
             this.lblprecioP.BackColor = System.Drawing.Color.Transparent;
-            this.lblprecioP.Location = new System.Drawing.Point(252, 99);
+            this.lblprecioP.Location = new System.Drawing.Point(168, 64);
+            this.lblprecioP.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblprecioP.Name = "lblprecioP";
-            this.lblprecioP.Size = new System.Drawing.Size(18, 20);
+            this.lblprecioP.Size = new System.Drawing.Size(13, 13);
             this.lblprecioP.TabIndex = 15;
             this.lblprecioP.Text = "0";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(28, 537);
+            this.label7.Location = new System.Drawing.Point(19, 349);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 20);
+            this.label7.Size = new System.Drawing.Size(49, 13);
             this.label7.TabIndex = 17;
             this.label7.Text = "Cantidad";
             // 
@@ -284,10 +297,10 @@
             this.txtcantidadP.LineIdleColor = System.Drawing.Color.Gray;
             this.txtcantidadP.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtcantidadP.LineThickness = 3;
-            this.txtcantidadP.Location = new System.Drawing.Point(108, 513);
+            this.txtcantidadP.Location = new System.Drawing.Point(72, 333);
             this.txtcantidadP.Margin = new System.Windows.Forms.Padding(4);
             this.txtcantidadP.Name = "txtcantidadP";
-            this.txtcantidadP.Size = new System.Drawing.Size(140, 44);
+            this.txtcantidadP.Size = new System.Drawing.Size(93, 29);
             this.txtcantidadP.TabIndex = 16;
             this.txtcantidadP.Text = "0";
             this.txtcantidadP.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -310,19 +323,21 @@
             this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.White;
             this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.DeepSkyBlue;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(23, 110);
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(15, 71);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(489, 251);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(326, 163);
             this.bunifuGradientPanel1.TabIndex = 18;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(407, 144);
+            this.label10.Location = new System.Drawing.Point(271, 94);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 20);
+            this.label10.Size = new System.Drawing.Size(44, 13);
             this.label10.TabIndex = 17;
             this.label10.Text = "Agregar";
             // 
@@ -330,18 +345,20 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(3, 0);
+            this.label8.Location = new System.Drawing.Point(2, 0);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 20);
+            this.label8.Size = new System.Drawing.Size(47, 13);
             this.label8.TabIndex = 16;
             this.label8.Text = "Preparar";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(26, 403);
+            this.label9.Location = new System.Drawing.Point(17, 262);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(186, 20);
+            this.label9.Size = new System.Drawing.Size(125, 13);
             this.label9.TabIndex = 19;
             this.label9.Text = "Informacion del Producto";
             // 
@@ -350,20 +367,33 @@
             this.btneliminar.BackColor = System.Drawing.Color.Transparent;
             this.btneliminar.Image = global::ventas.Properties.Resources.error;
             this.btneliminar.ImageActive = global::ventas.Properties.Resources.error__1_;
-            this.btneliminar.Location = new System.Drawing.Point(728, 388);
+            this.btneliminar.Location = new System.Drawing.Point(485, 252);
+            this.btneliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btneliminar.Name = "btneliminar";
-            this.btneliminar.Size = new System.Drawing.Size(71, 71);
+            this.btneliminar.Size = new System.Drawing.Size(47, 46);
             this.btneliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btneliminar.TabIndex = 20;
             this.btneliminar.TabStop = false;
             this.btneliminar.Zoom = 10;
             this.btneliminar.Click += new System.EventHandler(this.btneliminar_Click);
             // 
+            // lblnombre
+            // 
+            this.lblnombre.AutoSize = true;
+            this.lblnombre.BackColor = System.Drawing.Color.Transparent;
+            this.lblnombre.Location = new System.Drawing.Point(129, 36);
+            this.lblnombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblnombre.Name = "lblnombre";
+            this.lblnombre.Size = new System.Drawing.Size(10, 13);
+            this.lblnombre.TabIndex = 18;
+            this.lblnombre.Text = ".";
+            // 
             // Receta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(819, 598);
+            this.ClientSize = new System.Drawing.Size(546, 389);
+            this.Controls.Add(this.lblnombre);
             this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
@@ -378,8 +408,10 @@
             this.Controls.Add(this.btnconfirma);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Receta";
+            this.Padding = new System.Windows.Forms.Padding(13, 60, 13, 13);
             this.Resizable = false;
             this.Text = "Receta";
             ((System.ComponentModel.ISupportInitialize)(this.btnagregarI)).EndInit();
@@ -417,5 +449,6 @@
         private System.Windows.Forms.Label label9;
         private Bunifu.Framework.UI.BunifuImageButton btneliminar;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblnombre;
     }
 }

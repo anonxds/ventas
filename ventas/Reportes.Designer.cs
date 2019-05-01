@@ -40,6 +40,7 @@
             this.lbl = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblnombre = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnsalir = new Bunifu.Framework.UI.BunifuImageButton();
             this.btngenerarpdf = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvinfo)).BeginInit();
@@ -72,14 +73,14 @@
             this.dgvinfo.Name = "dgvinfo";
             this.dgvinfo.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvinfo.RowTemplate.Height = 28;
-            this.dgvinfo.Size = new System.Drawing.Size(776, 401);
+            this.dgvinfo.Size = new System.Drawing.Size(776, 402);
             this.dgvinfo.TabIndex = 0;
             // 
             // cbinfo
             // 
             this.cbinfo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbinfo.FormattingEnabled = true;
-            this.cbinfo.Location = new System.Drawing.Point(23, 99);
+            this.cbinfo.Location = new System.Drawing.Point(22, 98);
             this.cbinfo.Name = "cbinfo";
             this.cbinfo.Size = new System.Drawing.Size(121, 28);
             this.cbinfo.TabIndex = 1;
@@ -87,7 +88,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(23, 133);
+            this.textBox1.Location = new System.Drawing.Point(22, 132);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 26);
             this.textBox1.TabIndex = 2;
@@ -96,7 +97,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(129, 136);
+            this.label1.Location = new System.Drawing.Point(129, 135);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 20);
             this.label1.TabIndex = 3;
@@ -105,18 +106,18 @@
             // dtantes
             // 
             this.dtantes.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtantes.Location = new System.Drawing.Point(329, 97);
+            this.dtantes.Location = new System.Drawing.Point(328, 97);
             this.dtantes.Name = "dtantes";
-            this.dtantes.Size = new System.Drawing.Size(143, 26);
+            this.dtantes.Size = new System.Drawing.Size(144, 26);
             this.dtantes.TabIndex = 4;
             this.dtantes.ValueChanged += new System.EventHandler(this.dtantes_ValueChanged);
             // 
             // dtdespues
             // 
             this.dtdespues.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtdespues.Location = new System.Drawing.Point(329, 129);
+            this.dtdespues.Location = new System.Drawing.Point(328, 129);
             this.dtdespues.Name = "dtdespues";
-            this.dtdespues.Size = new System.Drawing.Size(143, 26);
+            this.dtdespues.Size = new System.Drawing.Size(144, 26);
             this.dtdespues.TabIndex = 5;
             this.dtdespues.ValueChanged += new System.EventHandler(this.dtdespues_ValueChanged);
             // 
@@ -141,7 +142,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 76);
+            this.label3.Location = new System.Drawing.Point(20, 75);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 20);
             this.label3.TabIndex = 10;
@@ -150,20 +151,29 @@
             // lblnombre
             // 
             this.lblnombre.AutoSize = true;
-            this.lblnombre.Location = new System.Drawing.Point(286, 32);
+            this.lblnombre.Location = new System.Drawing.Point(250, 25);
             this.lblnombre.Name = "lblnombre";
             this.lblnombre.Size = new System.Drawing.Size(51, 20);
             this.lblnombre.TabIndex = 11;
             this.lblnombre.Text = "label4";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(98, 248);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 20);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Exportar";
             // 
             // btnsalir
             // 
             this.btnsalir.BackColor = System.Drawing.Color.Transparent;
             this.btnsalir.Image = global::ventas.Properties.Resources.house_outline;
             this.btnsalir.ImageActive = global::ventas.Properties.Resources.house_outline__1_;
-            this.btnsalir.Location = new System.Drawing.Point(708, 12);
+            this.btnsalir.Location = new System.Drawing.Point(622, 25);
             this.btnsalir.Name = "btnsalir";
-            this.btnsalir.Size = new System.Drawing.Size(71, 71);
+            this.btnsalir.Size = new System.Drawing.Size(70, 71);
             this.btnsalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnsalir.TabIndex = 9;
             this.btnsalir.TabStop = false;
@@ -175,9 +185,9 @@
             this.btngenerarpdf.BackColor = System.Drawing.Color.Transparent;
             this.btngenerarpdf.Image = global::ventas.Properties.Resources.generar;
             this.btngenerarpdf.ImageActive = global::ventas.Properties.Resources.generar2;
-            this.btngenerarpdf.Location = new System.Drawing.Point(23, 197);
+            this.btngenerarpdf.Location = new System.Drawing.Point(22, 197);
             this.btngenerarpdf.Name = "btngenerarpdf";
-            this.btngenerarpdf.Size = new System.Drawing.Size(71, 71);
+            this.btngenerarpdf.Size = new System.Drawing.Size(70, 71);
             this.btngenerarpdf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btngenerarpdf.TabIndex = 8;
             this.btngenerarpdf.TabStop = false;
@@ -188,7 +198,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 684);
+            this.ClientSize = new System.Drawing.Size(802, 685);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.lblnombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnsalir);
@@ -203,6 +214,7 @@
             this.Controls.Add(this.dgvinfo);
             this.MaximizeBox = false;
             this.Name = "Reportes";
+            this.Padding = new System.Windows.Forms.Padding(20, 92, 20, 20);
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Black;
             this.Text = "Reportes";
@@ -229,5 +241,6 @@
         private Bunifu.Framework.UI.BunifuImageButton btnsalir;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblnombre;
+        private System.Windows.Forms.Label label4;
     }
 }

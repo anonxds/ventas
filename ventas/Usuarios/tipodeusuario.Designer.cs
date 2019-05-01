@@ -40,6 +40,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnregresar = new Bunifu.Framework.UI.BunifuImageButton();
             this.lblid = new System.Windows.Forms.Label();
+            this.lblnombre = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvinfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnregresar)).BeginInit();
             this.SuspendLayout();
@@ -64,20 +65,22 @@
             this.dgvinfo.EnableHeadersVisualStyles = false;
             this.dgvinfo.HeaderBgColor = System.Drawing.Color.AliceBlue;
             this.dgvinfo.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvinfo.Location = new System.Drawing.Point(322, 129);
+            this.dgvinfo.Location = new System.Drawing.Point(215, 84);
+            this.dgvinfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvinfo.Name = "dgvinfo";
             this.dgvinfo.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvinfo.RowTemplate.Height = 28;
-            this.dgvinfo.Size = new System.Drawing.Size(360, 425);
+            this.dgvinfo.Size = new System.Drawing.Size(240, 276);
             this.dgvinfo.TabIndex = 1;
             this.dgvinfo.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvinfo_CellDoubleClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 164);
+            this.label1.Location = new System.Drawing.Point(13, 107);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 20);
+            this.label1.Size = new System.Drawing.Size(44, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nombre";
             // 
@@ -91,10 +94,9 @@
             this.txtnombre.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtnombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtnombre.isPassword = false;
-            this.txtnombre.Location = new System.Drawing.Point(91, 150);
-            this.txtnombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtnombre.Location = new System.Drawing.Point(61, 97);
             this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(161, 44);
+            this.txtnombre.Size = new System.Drawing.Size(107, 29);
             this.txtnombre.TabIndex = 5;
             this.txtnombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -108,7 +110,7 @@
             this.btnagregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnagregar.DisabledColor = System.Drawing.Color.Gray;
             this.btnagregar.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnagregar.Iconimage = global::ventas.Properties.Resources.plus_button;
+            this.btnagregar.Iconimage = null;
             this.btnagregar.Iconimage_right = null;
             this.btnagregar.Iconimage_right_Selected = null;
             this.btnagregar.Iconimage_Selected = null;
@@ -119,14 +121,13 @@
             this.btnagregar.IconVisible = true;
             this.btnagregar.IconZoom = 90D;
             this.btnagregar.IsTab = false;
-            this.btnagregar.Location = new System.Drawing.Point(65, 203);
-            this.btnagregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnagregar.Location = new System.Drawing.Point(76, 132);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnagregar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
             this.btnagregar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnagregar.selected = false;
-            this.btnagregar.Size = new System.Drawing.Size(216, 135);
+            this.btnagregar.Size = new System.Drawing.Size(92, 62);
             this.btnagregar.TabIndex = 6;
             this.btnagregar.Text = "  Agregar Nuevo Rol";
             this.btnagregar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -155,14 +156,13 @@
             this.btneliminar.IconVisible = true;
             this.btneliminar.IconZoom = 90D;
             this.btneliminar.IsTab = false;
-            this.btneliminar.Location = new System.Drawing.Point(187, 503);
-            this.btneliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btneliminar.Location = new System.Drawing.Point(125, 327);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btneliminar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btneliminar.OnHoverTextColor = System.Drawing.Color.White;
             this.btneliminar.selected = false;
-            this.btneliminar.Size = new System.Drawing.Size(119, 51);
+            this.btneliminar.Size = new System.Drawing.Size(79, 33);
             this.btneliminar.TabIndex = 7;
             this.btneliminar.Text = "Eliminar";
             this.btneliminar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -180,10 +180,9 @@
             this.txtpostnombre.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtpostnombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtpostnombre.isPassword = false;
-            this.txtpostnombre.Location = new System.Drawing.Point(91, 435);
-            this.txtpostnombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtpostnombre.Location = new System.Drawing.Point(61, 283);
             this.txtpostnombre.Name = "txtpostnombre";
-            this.txtpostnombre.Size = new System.Drawing.Size(161, 44);
+            this.txtpostnombre.Size = new System.Drawing.Size(107, 29);
             this.txtpostnombre.TabIndex = 8;
             this.txtpostnombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -208,14 +207,13 @@
             this.btnmod.IconVisible = true;
             this.btnmod.IconZoom = 90D;
             this.btnmod.IsTab = false;
-            this.btnmod.Location = new System.Drawing.Point(44, 503);
-            this.btnmod.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnmod.Location = new System.Drawing.Point(29, 327);
             this.btnmod.Name = "btnmod";
             this.btnmod.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnmod.OnHovercolor = System.Drawing.Color.Yellow;
             this.btnmod.OnHoverTextColor = System.Drawing.Color.White;
             this.btnmod.selected = false;
-            this.btnmod.Size = new System.Drawing.Size(119, 51);
+            this.btnmod.Size = new System.Drawing.Size(79, 33);
             this.btnmod.TabIndex = 9;
             this.btnmod.Text = "Actualizar";
             this.btnmod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -226,9 +224,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(153, 411);
+            this.label2.Location = new System.Drawing.Point(102, 267);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 20);
+            this.label2.Size = new System.Drawing.Size(23, 13);
             this.label2.TabIndex = 10;
             this.label2.Text = "Rol";
             // 
@@ -237,28 +236,42 @@
             this.btnregresar.BackColor = System.Drawing.Color.Transparent;
             this.btnregresar.Image = global::ventas.Properties.Resources.house_outline;
             this.btnregresar.ImageActive = global::ventas.Properties.Resources.house_outline__1_;
-            this.btnregresar.Location = new System.Drawing.Point(629, 569);
+            this.btnregresar.Location = new System.Drawing.Point(419, 370);
+            this.btnregresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnregresar.Name = "btnregresar";
-            this.btnregresar.Size = new System.Drawing.Size(71, 71);
+            this.btnregresar.Size = new System.Drawing.Size(47, 46);
             this.btnregresar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnregresar.TabIndex = 11;
             this.btnregresar.TabStop = false;
             this.btnregresar.Zoom = 10;
+            this.btnregresar.Click += new System.EventHandler(this.btnregresar_Click);
             // 
             // lblid
             // 
             this.lblid.AutoSize = true;
-            this.lblid.Location = new System.Drawing.Point(174, 343);
+            this.lblid.Location = new System.Drawing.Point(116, 223);
+            this.lblid.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblid.Name = "lblid";
-            this.lblid.Size = new System.Drawing.Size(0, 20);
+            this.lblid.Size = new System.Drawing.Size(0, 13);
             this.lblid.TabIndex = 12;
             this.lblid.Visible = false;
             // 
+            // lblnombre
+            // 
+            this.lblnombre.AutoSize = true;
+            this.lblnombre.Location = new System.Drawing.Point(212, 39);
+            this.lblnombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblnombre.Name = "lblnombre";
+            this.lblnombre.Size = new System.Drawing.Size(44, 13);
+            this.lblnombre.TabIndex = 13;
+            this.lblnombre.Text = "Nombre";
+            // 
             // tipodeusuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 663);
+            this.ClientSize = new System.Drawing.Size(482, 431);
+            this.Controls.Add(this.lblnombre);
             this.Controls.Add(this.lblid);
             this.Controls.Add(this.btnregresar);
             this.Controls.Add(this.label2);
@@ -269,8 +282,10 @@
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvinfo);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "tipodeusuario";
+            this.Padding = new System.Windows.Forms.Padding(13, 39, 13, 13);
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Yellow;
             this.Text = "Tipos de Roles";
@@ -292,5 +307,6 @@
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuImageButton btnregresar;
         private System.Windows.Forms.Label lblid;
+        private System.Windows.Forms.Label lblnombre;
     }
 }

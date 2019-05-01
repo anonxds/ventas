@@ -87,10 +87,13 @@ namespace ventas
             switch (cbinfo.Text)
             {
                 case "Salidas":
-                    dv.RowFilter = "Salida > '" + dtantes.Value.Date + "' and  Salida < '" + dtdespues.Value.Date + "'";
+                    dv.RowFilter = "Salida >= '" + dtantes.Value.Date + "' and  Salida <= '" + dtdespues.Value.Date + "'";
                     break;
                 case "Entradas":
-                    dv.RowFilter = "Entrada > '" + dtantes.Value.Date + "' and  Entrada < '" + dtdespues.Value.Date + "'";
+                    dv.RowFilter = "Entrada >= '" + dtantes.Value.Date + "' and  Entrada <= '" + dtdespues.Value.Date + "'";
+                    break;
+                case "Compras":
+                    dv.RowFilter = "Fecha >= '" + dtantes.Value.Date + "' and  Fecha <= '" + dtdespues.Value.Date + "'";
                     break;
                 default:
                     dtantes.Enabled = false;

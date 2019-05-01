@@ -1,4 +1,5 @@
 ﻿using MetroFramework.Forms;
+using Proyecto1;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,10 +16,11 @@ namespace ventas.Usuarios
     {
         sql s = new sql();
 
-        public tipodeusuario()
+        public tipodeusuario(string nombre)
         {
             InitializeComponent();
             s.dgrid(dgvinfo, "select id,tipo as Nombre from tipousuario");
+            lblnombre.Text = nombre;
         }
 
         private void btnagregar_Click(object sender, EventArgs e)
@@ -51,6 +53,12 @@ namespace ventas.Usuarios
             s.Exe(ups);
             s.dgrid(dgvinfo, "select id,tipo as Nombre from tipousuario");
 
+        }
+
+        private void btnregresar_Click(object sender, EventArgs e)
+        {
+            MENU m = new MENU(lblnombre.Text);
+            m.Show();
         }
     }
 }

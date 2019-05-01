@@ -57,7 +57,7 @@ namespace ventas
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
-            Receta r = new Receta();
+            Receta r = new Receta(lblnombre.Text);
             r.Show();
         }
     }
